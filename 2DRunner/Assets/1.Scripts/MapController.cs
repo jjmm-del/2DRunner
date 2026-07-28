@@ -13,6 +13,7 @@ public class MapController : MonoBehaviour
     [SerializeField] private float _relocateXPosition = -25f;
 
     private Queue<GameObject> _groundPool;
+    private GameObject _lastSpawnedGround;
     private Vector3 _nextSpawnPosition;
 
     private void Awake()
@@ -23,11 +24,17 @@ public class MapController : MonoBehaviour
     private void InitializePool()
     {
         _groundPool = new Queue<GameObject>();
-        _nextSpawnPosition = Vector3.zero;
+        Vector3 currentSpawnPosition = Vector3.zero;
 
         for (int i = 0; i < _poolSize; i++)
         {
-            SpawnGround();
+            GameObject newGround = Instantiate(_groundPrefab, currentSpawnPosition, Quaternion.identity);
+            _groundPool.Enqueue(newGround);
+            
+            // 방금 생성한 바닥을 '마지막 바닥'으로 갱신합니다.
+            _lastSpawnedGround = newGround; 
+            
+            currentSpawnPosition.x += _groundWidth;
         }
     }
     // Update is called once per frame
@@ -52,10 +59,12 @@ public class MapController : MonoBehaviour
     private void RelocateGround()
     {
         GameObject oldGround = _groundPool.Dequeue();
+        float newXPosition = _lastSpawnedGround.transform.position.x + _groundWidth;
         
-        oldGround.transform.position = new Vector3(_nextSpawnPosition.x, oldGround.transform.position.y, 0f);
+        oldGround.transform.position = new Vector3(newXPosition, oldGround.transform.position.y, 0f);
 
         _groundPool.Enqueue(oldGround);
-        _nextSpawnPosition.x += _groundWidth;
+        _lastSpawnedGround = oldGround;
+        
     }
 }
