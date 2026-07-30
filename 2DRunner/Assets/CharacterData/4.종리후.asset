@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499e1744184594246bb6fa2ed52be170, type: 3}
   m_Name: "4.\uC885\uB9AC\uD6C4"
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
-  CharacterID: 4
+  CharacterID: 3
   CharacterName: "\uC885\uB9AC\uD6C4"
   BaseHealth: 0
   BonusMoveSpeed: 0

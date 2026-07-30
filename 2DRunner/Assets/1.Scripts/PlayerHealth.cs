@@ -11,9 +11,13 @@ public class PlayerHealth : MonoBehaviour
     public event Action<float, float> OnHealthChanged;
     public event Action OnDied;
 
-    private void Start()
+    public void InitializeHealth(float characterMaxHealth)
     {
+        _maxHealth = characterMaxHealth;
         _currentHealth = _maxHealth;
+        
+        OnHealthChanged?.Invoke(_currentHealth, _maxHealth);
+        Debug.Log($"플레이어 체력 세팅 완료:{_maxHealth}");
     }
 
     public void TakeDamage(float damageAmount)

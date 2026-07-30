@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499e1744184594246bb6fa2ed52be170, type: 3}
   m_Name: "1.\uCCAD\uBA85"
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
-  CharacterID: 1
-  CharacterName: 
-  BaseHealth: 0
-  BonusMoveSpeed: 0
+  CharacterID: 0
+  CharacterName: "\uCCAD\uBA85"
+  BaseHealth: 100
+  BonusMoveSpeed: 1
+  CharacterSprite: {fileID: 3938283902679913333, guid: db6c11a9d2416dc449e2e306a2955267, type: 3}
+  CharacterAnimator: {fileID: 9100000, guid: a538b7fa35bc81e47ac790054a3c2ceb, type: 2}

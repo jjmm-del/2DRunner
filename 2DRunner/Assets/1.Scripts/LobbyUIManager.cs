@@ -11,6 +11,12 @@ public class LobbyUIManager : MonoBehaviour
     [Header("플레이어 기록 텍스트 UI")]
     [SerializeField] private TextMeshProUGUI _highestScoreText;
     
+    [Header("캐릭터 시각 UI")]
+    [Tooltip("캐릭터 이미지를 띄울 Image")]
+    [SerializeField] private Image _characterDisplayImage;
+    [Tooltip("캐릭터 이미지에 애니메이션을 재생할 Animator")]
+    [SerializeField] private Animator _characterAnimator;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,6 +33,16 @@ public class LobbyUIManager : MonoBehaviour
 
             _healthText.text = $"체력: {characterData.BaseHealth}";
             _speedText.text = $"추가 속도: + {characterData.BonusMoveSpeed}";
+        }
+
+        if (_characterDisplayImage != null && characterData.CharacterSprite != null)
+        {
+            _characterDisplayImage.sprite = characterData.CharacterSprite;
+        }
+
+        if (_characterAnimator != null && characterData.CharacterAnimator != null)
+        {
+            _characterAnimator.runtimeAnimatorController = characterData.CharacterAnimator;
         }
     }
 }

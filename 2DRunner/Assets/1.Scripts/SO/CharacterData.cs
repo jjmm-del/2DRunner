@@ -15,7 +15,14 @@ public class CharacterData : ScriptableObject
     public float BaseHealth;
     [Tooltip("캐릭터가 가지는 추가 이동속도")]
     public float BonusMoveSpeed;
+
+    [Header("캐릭터 시각화")]
+    [Tooltip("로비 UI에 표시될 이미지")]
+    public Sprite CharacterSprite;
     
-    
-    
+    [Tooltip("캐릭터 애니메이션 상태를 관리하는 컨트롤러")]
+    public RuntimeAnimatorController CharacterAnimator;
+
+
+
 }

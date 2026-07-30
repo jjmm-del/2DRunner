@@ -19,8 +19,9 @@ public class LobbyManager : MonoBehaviour
         int lastUsedId = DataManager.Instance.CurrentPlayerData.LastUsedCharacterID;
         
         _currentIndex = FindCharacterIndexById(lastUsedId);
-
-        UpdateLobbyState();
+        CharacterData initialData = _availableCharacters[_currentIndex];
+        _uiManager.UpdateCharacterInfo(initialData);
+        
     }
 
     private int FindCharacterIndexById(int id)
