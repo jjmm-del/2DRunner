@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,9 +12,15 @@ public class GameManager : MonoBehaviour
     
     [Tooltip("메인 씬에 배치된 플레이어의 Setup스크립트")]
     [SerializeField] private PlayerSetup _playerSetup;
+
+    [Tooltip("플레이어 죽음 이벤트를 감지하기 위해")]
+    [SerializeField] private PlayerHealth _playerHealth;
+    
+    [Tooltip("게임 오버 시 점수 기록을정지 하기 위해")]
+    [SerializeField] private ScoreManager _scoreManager;
     
     public float CurrentBonusSpeed { get; private set; }
-
+    public bool IsGameOver { get; private set; }
     private void Awake()
     {
         if (Instance == null)
@@ -27,8 +35,26 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        IsGameOver = false;
         ApplySelectedCharacter();
     }
+
+    private void OnEnable()
+    {
+        if (_playerHealth != null)
+        {
+            _playerHealth.OnDied += HandleGameOver;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (_playerHealth != null)
+        {
+            _playerHealth.OnDied += HandleGameOver;
+        }
+    }
+    
     private void ApplySelectedCharacter()
     {
         // 1. DataManager에서 유저가 마지막으로 선택한 캐릭터 ID를 가져옵니다.
@@ -56,5 +82,23 @@ public class GameManager : MonoBehaviour
 
         // 4. 찾은 데이터를 바탕으로 플레이어를 조립합니다.
         _playerSetup.SetupCharacter(selectedData);
+    }
+
+    private void HandleGameOver()
+    {
+        IsGameOver = true;
+        Debug.Log("게임 오버! 잠시 후 로비 씬으로 돌아갑니다.");
+        if (_scoreManager != null)
+        {
+            _scoreManager.StopScoreCalculation();
+        }
+
+        StartCoroutine(ReturnToLobbyRoutine());
+    }
+
+    private IEnumerator ReturnToLobbyRoutine()
+    {
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene("0.Scenes/LobbyScene");
     }
 }

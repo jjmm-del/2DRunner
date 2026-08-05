@@ -22,6 +22,10 @@ public class ObstacleSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsGameOver)
+        {
+            return;
+        }
         _timer += Time.deltaTime;
 
         if (_timer >= _timeUntilNextSpawn)
