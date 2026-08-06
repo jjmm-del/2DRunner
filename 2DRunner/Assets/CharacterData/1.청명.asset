@@ -16,5 +16,5 @@ MonoBehaviour:
   CharacterName: "\uCCAD\uBA85"
   BaseHealth: 100
   BonusMoveSpeed: 1
-  CharacterSprite: {fileID: 4831772868017075871, guid: 4e48ada58c6b718448b9ddff8a5ddcfe, type: 3}
-  CharacterAnimator: {fileID: 9100000, guid: a538b7fa35bc81e47ac790054a3c2ceb, type: 2}
+  CharacterSprite: {fileID: 457015046628994560, guid: 4e48ada58c6b718448b9ddff8a5ddcfe, type: 3}
+  CharacterAnimator: {fileID: 9100000, guid: 516db8429eeae6948acc443e53629292, type: 2}

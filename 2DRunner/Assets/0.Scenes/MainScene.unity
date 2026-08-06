@@ -1485,6 +1485,7 @@ GameObject:
   - component: {fileID: 8621493708733627714}
   - component: {fileID: 8725614090426776005}
   - component: {fileID: 8725614090426776004}
+  - component: {fileID: 8725614090426776006}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1565,8 +1566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
   _obstaclePrefab: {fileID: 7707066892361977712, guid: 81b62cf29c5e88f4f9470029e981dbcc, type: 3}
-  _minSpawnTime: 1.5
-  _maxSpawnTime: 3
+  _minSpawnTime: 0.6
+  _maxSpawnTime: 2
 --- !u!1 &5911126363228758348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,7 +1701,7 @@ Animator:
   m_GameObject: {fileID: 4030797442505047698}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 516db8429eeae6948acc443e53629292, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1712,6 +1713,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8725614090426776006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4030797442505047698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ab2f29148c79845b1b648808c61c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimation
+  _playerMovement: {fileID: 8725614090426776003}
+  _playerHealth: {fileID: 8621493708733627714}
+  _hitStopTime: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

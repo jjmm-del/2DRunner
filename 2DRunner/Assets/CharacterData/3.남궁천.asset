@@ -17,4 +17,4 @@ MonoBehaviour:
   BaseHealth: 100
   BonusMoveSpeed: 2
   CharacterSprite: {fileID: 6474124359838963189, guid: 3d178b2544fd63c4e80c6d951d241bb5, type: 3}
-  CharacterAnimator: {fileID: 0}
+  CharacterAnimator: {fileID: 22100000, guid: ea27989a7927fad479ee74ef071f3e44, type: 2}

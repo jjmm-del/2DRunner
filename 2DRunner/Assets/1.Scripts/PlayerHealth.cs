@@ -9,14 +9,27 @@ public class PlayerHealth : MonoBehaviour
     
     [Header("피격 설정")]
     [SerializeField]private float _invincibilityDuration = 1.0f;
+
+    private Color _hitColor = Color.red;
+    private float _blinkInterval = 0.1f;
+    private SpriteRenderer _spriteRenderer;
     public event Action<float, float> OnHealthChanged;
+    public event Action OnDamaged;
     public event Action OnDied;
 
+    private void Awake()
+    {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     public void InitializeHealth(float characterMaxHealth)
     {
         _maxHealth = characterMaxHealth;
         _currentHealth = _maxHealth;
         _isInvincible = false;
+        if (_spriteRenderer != null)
+        {
+            _spriteRenderer.color = Color.white;
+        }
         OnHealthChanged?.Invoke(_currentHealth, _maxHealth);
         Debug.Log($"플레이어 체력 세팅 완료:{_maxHealth}");
     }
@@ -29,8 +42,9 @@ public class PlayerHealth : MonoBehaviour
         }
 
         _currentHealth -= damageAmount;
-
+        
         OnHealthChanged?.Invoke(_currentHealth, _maxHealth);
+        OnDamaged?.Invoke();
         Debug.Log($"플레이어 피격! 현재 체력: {_currentHealth}/{_maxHealth}");
 
         if (_currentHealth <= 0f)
@@ -53,8 +67,31 @@ public class PlayerHealth : MonoBehaviour
     private IEnumerator InvincibilityRoutine()
     {
         _isInvincible = true;
+
+        float elapsedTime = 0f;
+        Color originColor = Color.white;
+        while (elapsedTime < _invincibilityDuration)
+        {
+            if (_spriteRenderer != null)
+            {
+                _spriteRenderer.color = _hitColor;
+            }
+            yield return new WaitForSeconds(_blinkInterval);
+            elapsedTime += _blinkInterval;
+            if (_spriteRenderer != null)
+            {
+                _spriteRenderer.color = originColor;
+            }
+            yield return new WaitForSeconds(_blinkInterval);
+            elapsedTime += _blinkInterval;
+        }
+
+        if (_spriteRenderer != null)
+        {
+            _spriteRenderer.color = originColor;
+        }
         // 무적 시각 효과 추가
-        yield return new WaitForSeconds(_invincibilityDuration);
+        
         _isInvincible = false;
     }
 }
