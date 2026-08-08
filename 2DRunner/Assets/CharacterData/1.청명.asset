@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 499e1744184594246bb6fa2ed52be170, type: 3}
+  m_Name: "1.\uCCAD\uBA85"
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  CharacterID: 0
+  CharacterName: "\uCCAD\uBA85"
+  BaseHealth: 120
+  BonusMoveSpeed: 4
+  CharacterSprite: {fileID: 457015046628994560, guid: 4e48ada58c6b718448b9ddff8a5ddcfe, type: 3}
+  CharacterAnimator: {fileID: 9100000, guid: 516db8429eeae6948acc443e53629292, type: 2}

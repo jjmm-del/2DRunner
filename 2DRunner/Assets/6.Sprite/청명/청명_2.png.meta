@@ -1,0 +1,826 @@
+fileFormatVersion: 2
+guid: 77a77549f8bd6da42965e597b9b5d591
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2989198976108643379
+    second: "\uCCAD\uBA85_2_0"
+  - first:
+      213: 6796397524527741043
+    second: "\uCCAD\uBA85_2_1"
+  - first:
+      213: 957775729073705462
+    second: "\uCCAD\uBA85_2_2"
+  - first:
+      213: -1412204198218317508
+    second: "\uCCAD\uBA85_2_3"
+  - first:
+      213: 8840193528356267205
+    second: "\uCCAD\uBA85_2_4"
+  - first:
+      213: 8474381319139897191
+    second: "\uCCAD\uBA85_2_5"
+  - first:
+      213: -8292134539735930600
+    second: "\uCCAD\uBA85_2_6"
+  - first:
+      213: -4347677908085683619
+    second: "\uCCAD\uBA85_2_7"
+  - first:
+      213: -2023951528467538221
+    second: "\uCCAD\uBA85_2_8"
+  - first:
+      213: 684725492127797098
+    second: "\uCCAD\uBA85_2_9"
+  - first:
+      213: -5754869798001523558
+    second: "\uCCAD\uBA85_2_10"
+  - first:
+      213: -7497284834443507057
+    second: "\uCCAD\uBA85_2_11"
+  - first:
+      213: -4705677060307480157
+    second: "\uCCAD\uBA85_2_12"
+  - first:
+      213: -4609162959830520609
+    second: "\uCCAD\uBA85_2_13"
+  - first:
+      213: 2769493484767987999
+    second: "\uCCAD\uBA85_2_14"
+  - first:
+      213: 5511790184910932212
+    second: "\uCCAD\uBA85_2_15"
+  - first:
+      213: -6751456318889603771
+    second: "\uCCAD\uBA85_2_16"
+  - first:
+      213: 1390068360272929842
+    second: "\uCCAD\uBA85_2_17"
+  - first:
+      213: 4960032943765648561
+    second: "\uCCAD\uBA85_2_18"
+  - first:
+      213: -8622238595054656252
+    second: "\uCCAD\uBA85_2_19"
+  - first:
+      213: 8001291274841314774
+    second: "\uCCAD\uBA85_2_20"
+  - first:
+      213: -6666457768018080717
+    second: "\uCCAD\uBA85_2_21"
+  - first:
+      213: 2214839334895151959
+    second: "\uCCAD\uBA85_2_22"
+  - first:
+      213: 361109605422007207
+    second: "\uCCAD\uBA85_2_23"
+  - first:
+      213: 8631177850215512455
+    second: "\uCCAD\uBA85_2_24"
+  - first:
+      213: 5440746714737305456
+    second: "\uCCAD\uBA85_2_25"
+  - first:
+      213: 4784553109415363823
+    second: "\uCCAD\uBA85_2_26"
+  - first:
+      213: -5484910742373720111
+    second: "\uCCAD\uBA85_2_27"
+  - first:
+      213: -2461969943352886949
+    second: "\uCCAD\uBA85_2_28"
+  - first:
+      213: 1205310219535340986
+    second: "\uCCAD\uBA85_2_29"
+  - first:
+      213: 2767993501816643784
+    second: "\uCCAD\uBA85_2_30"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_0"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 723
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334caed91a4cb7920800000000000000
+      internalID: 2989198976108643379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_1"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 723
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378f1d92a87a15e50800000000000000
+      internalID: 6796397524527741043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_2"
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 723
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1dde973f3ba4d00800000000000000
+      internalID: 957775729073705462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_3"
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 723
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31c1ee83c7d66ce0800000000000000
+      internalID: -1412204198218317508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_4"
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 723
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4e16b3d2daeaa70800000000000000
+      internalID: 8840193528356267205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_5"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 543
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f2a8a19ec0b9570800000000000000
+      internalID: 8474381319139897191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_6"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 543
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819ea49d19b6cec80800000000000000
+      internalID: -8292134539735930600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_7"
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 543
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a4db24af1f9a3c0800000000000000
+      internalID: -4347677908085683619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_8"
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 543
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de5517eeca79e3e0800000000000000
+      internalID: -2023951528467538221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_9"
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 543
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f8eee0532a08900800000000000000
+      internalID: 684725492127797098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_10"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 363
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94ce79c8689220b0800000000000000
+      internalID: -5754869798001523558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_11"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 363
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a42175a2b44f790800000000000000
+      internalID: -7497284834443507057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_12"
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 363
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a11ba835a312beb0800000000000000
+      internalID: -4705677060307480157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_13"
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 363
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdce96b55b6f800c0800000000000000
+      internalID: -4609162959830520609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_14"
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 363
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19ca57a6a73f6620800000000000000
+      internalID: 2769493484767987999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_15"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 183
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8c91078ffcd7c40800000000000000
+      internalID: 5511790184910932212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_16"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 183
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54dc40caf320e42a0800000000000000
+      internalID: -6751456318889603771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_17"
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 183
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234e39b0fc38a4310800000000000000
+      internalID: 1390068360272929842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_18"
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 183
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4f267dea395d440800000000000000
+      internalID: 4960032943765648561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_19"
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 183
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405aa1d2ea7a75880800000000000000
+      internalID: -8622238595054656252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_20"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 3
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3e5bedcce1fe340bf3d19fff900ce0
+      internalID: 8001291274841314774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_21"
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 3
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab1d2c730e1963469bec9cd10eb443e
+      internalID: -6666457768018080717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_22"
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 3
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aa906c81450eb4899b9143933bc6a8
+      internalID: 2214839334895151959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_23"
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 3
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30f9a3940b341349a308eef12fd5698
+      internalID: 361109605422007207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uCCAD\uBA85_2_24"
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 3
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7088ef9fd4f4c144594c9c1e5d63ed00
+      internalID: 8631177850215512455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8601333b35f44ab4eadae201840ba675
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":176.0,"y":177.0},"gridSpriteOffset":{"x":68.0,"y":0.0},"gridSpritePadding":{"x":141.0,"y":3.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      "\uCCAD\uBA85_2_0": 2989198976108643379
+      "\uCCAD\uBA85_2_1": 6796397524527741043
+      "\uCCAD\uBA85_2_10": -5754869798001523558
+      "\uCCAD\uBA85_2_11": -7497284834443507057
+      "\uCCAD\uBA85_2_12": -4705677060307480157
+      "\uCCAD\uBA85_2_13": -4609162959830520609
+      "\uCCAD\uBA85_2_14": 2769493484767987999
+      "\uCCAD\uBA85_2_15": 5511790184910932212
+      "\uCCAD\uBA85_2_16": -6751456318889603771
+      "\uCCAD\uBA85_2_17": 1390068360272929842
+      "\uCCAD\uBA85_2_18": 4960032943765648561
+      "\uCCAD\uBA85_2_19": -8622238595054656252
+      "\uCCAD\uBA85_2_2": 957775729073705462
+      "\uCCAD\uBA85_2_20": 8001291274841314774
+      "\uCCAD\uBA85_2_21": -6666457768018080717
+      "\uCCAD\uBA85_2_22": 2214839334895151959
+      "\uCCAD\uBA85_2_23": 361109605422007207
+      "\uCCAD\uBA85_2_24": 8631177850215512455
+      "\uCCAD\uBA85_2_3": -1412204198218317508
+      "\uCCAD\uBA85_2_4": 8840193528356267205
+      "\uCCAD\uBA85_2_5": 8474381319139897191
+      "\uCCAD\uBA85_2_6": -8292134539735930600
+      "\uCCAD\uBA85_2_7": -4347677908085683619
+      "\uCCAD\uBA85_2_8": -2023951528467538221
+      "\uCCAD\uBA85_2_9": 684725492127797098
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

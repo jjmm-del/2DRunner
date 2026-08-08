@@ -1,0 +1,59 @@
+using UnityEngine;
+
+public class ObstacleSpawner : MonoBehaviour
+{   
+    [Header("생성 설정")]
+    [Tooltip("생성할 장애물의 프리팹")]
+    [SerializeField]private ObstacleData[] _obstacleDatas;
+    [Tooltip("장애물이 생성되는 최소 간격(초)")]
+    [SerializeField]private float _minSpawnTime = 1.5f;
+    [Tooltip("장애물이 생성되는 최대 간격(초)")]
+    [SerializeField]private float _maxSpawnTime = 3f;
+
+    private float _timeUntilNextSpawn;
+    private float _timer;
+    
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        SetNextSpawnTime();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (GameManager.Instance != null && GameManager.Instance.IsGameOver)
+        {
+            return;
+        }
+        _timer += Time.deltaTime;
+
+        if (_timer >= _timeUntilNextSpawn)
+        {
+            SpawnObstacle();
+            SetNextSpawnTime();
+            _timer = 0f;
+        }
+    }
+
+    private void SpawnObstacle()
+    {
+        if (_obstacleDatas == null || _obstacleDatas.Length == 0)
+        {
+            Debug.LogWarning("장애물 프리팹이 등록되지않음");
+        }
+        int randomIndex = Random.Range(0, _obstacleDatas.Length);
+        ObstacleData selectedData = _obstacleDatas[randomIndex];
+
+        Vector3 spawnPosition = transform.position;
+        spawnPosition.y += selectedData.YOffset;
+        
+        GameObject newObstacle = Instantiate(selectedData.ObstaclePrefab,spawnPosition, Quaternion.identity);
+        Destroy(newObstacle, 10f);
+    }
+
+    private void SetNextSpawnTime()
+    {
+        _timeUntilNextSpawn = Random.Range(_minSpawnTime, _maxSpawnTime);
+    }
+}

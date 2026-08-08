@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 499e1744184594246bb6fa2ed52be170, type: 3}
+  m_Name: "2.\uB2F9\uAC01"
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  CharacterID: 1
+  CharacterName: "\uB2F9\uAC01"
+  BaseHealth: 100
+  BonusMoveSpeed: 5
+  CharacterSprite: {fileID: 4226769298325106307, guid: 3698deb8e70d67141bfad7281892b0d3, type: 3}
+  CharacterAnimator: {fileID: 22100000, guid: 8ea338d546ead0b47af9a724b3ae8aa8, type: 2}
