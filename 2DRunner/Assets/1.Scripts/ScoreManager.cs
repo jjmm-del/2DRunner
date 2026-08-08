@@ -22,7 +22,7 @@ public class ScoreManager : MonoBehaviour
         if (_isGameActive)
         {
             float bonusSpeed = GameManager.Instance.CurrentBonusSpeed;
-            float finalScorePerSecond = _scorePerSecond * bonusSpeed;
+            float finalScorePerSecond = _scorePerSecond + bonusSpeed;
             
             _currentScore += finalScorePerSecond*Time.deltaTime;
             

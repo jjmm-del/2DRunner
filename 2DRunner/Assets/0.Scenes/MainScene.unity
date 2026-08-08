@@ -784,15 +784,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300046, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 1491838229}
   - component: {fileID: 1491838228}
   m_Layer: 5
-  m_Name: GameOverText
+  m_Name: GameOverImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,8 +1004,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: 5e1f73051bab7a84082216dfcd9b664d, type: 3}
+  m_Sprite: {fileID: 21300038, guid: 1eaee135ce037439d925cee5e41ce026, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1565,8 +1565,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c3b7e0f7cf07c74e9190b0a6af1e07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObstacleSpawner
-  _obstaclePrefab: {fileID: 7707066892361977712, guid: 81b62cf29c5e88f4f9470029e981dbcc, type: 3}
-  _minSpawnTime: 0.6
+  _obstacleDatas:
+  - ObstaclePrefab: {fileID: 7707066892361977712, guid: 81b62cf29c5e88f4f9470029e981dbcc, type: 3}
+    YOffset: 0.25
+  - ObstaclePrefab: {fileID: 4907993073087669901, guid: b0950934bef169c4d9577a9d7463439d, type: 3}
+    YOffset: 1
+  _minSpawnTime: 1
   _maxSpawnTime: 2
 --- !u!1 &5911126363228758348
 GameObject:
@@ -1650,7 +1654,7 @@ Transform:
   m_GameObject: {fileID: 4030797442505047698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -6, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

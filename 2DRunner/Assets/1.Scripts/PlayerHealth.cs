@@ -42,11 +42,15 @@ public class PlayerHealth : MonoBehaviour
         }
 
         _currentHealth -= damageAmount;
-        
         OnHealthChanged?.Invoke(_currentHealth, _maxHealth);
         OnDamaged?.Invoke();
+        
         Debug.Log($"플레이어 피격! 현재 체력: {_currentHealth}/{_maxHealth}");
-
+        
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlayHit();
+        }
         if (_currentHealth <= 0f)
         {
             _currentHealth = 0f;
@@ -54,7 +58,13 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
+            float healthRatio = _currentHealth / _maxHealth;
+            if (healthRatio < 0.2f && SoundManager.Instance != null)
+            {
+                SoundManager.Instance.PlayDangerBGM();
+            }
             StartCoroutine(InvincibilityRoutine());
+            
         }
     }
 

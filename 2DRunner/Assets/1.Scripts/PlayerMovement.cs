@@ -50,6 +50,11 @@ public class PlayerMovement : MonoBehaviour
             _rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
             
             _currentJumpCount++;
+
+            if (SoundManager.Instance != null)
+            {
+                SoundManager.Instance.PlayJump();
+            }
         }
     }
     

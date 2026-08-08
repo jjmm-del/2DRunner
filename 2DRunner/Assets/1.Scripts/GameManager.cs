@@ -37,6 +37,10 @@ public class GameManager : MonoBehaviour
     {
         IsGameOver = false;
         ApplySelectedCharacter();
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.PlayMainBGM();
+        }
     }
 
     private void OnEnable()
@@ -88,6 +92,11 @@ public class GameManager : MonoBehaviour
     {
         IsGameOver = true;
         Debug.Log("게임 오버! 잠시 후 로비 씬으로 돌아갑니다.");
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.StopBGM();
+            SoundManager.Instance.PlayGameOver();
+        }
         if (_scoreManager != null)
         {
             _scoreManager.StopScoreCalculation();

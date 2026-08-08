@@ -12,10 +12,6 @@ public class PlayerAnimation : MonoBehaviour
     
     private Animator _animator;
     
-    //점프, 죽음 애니메이션 만들기 힘들어서 폐기
-    // private readonly int _isJumpingHash = Animator.StringToHash("IsJumping");
-    // private readonly int _dieHash = Animator.StringToHash("Die");
-
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -27,6 +23,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             _playerHealth.OnDamaged += TriggerHitStop;
         }
+        
     }
 
     private void OnDisable()
@@ -34,6 +31,7 @@ public class PlayerAnimation : MonoBehaviour
         if (_playerHealth != null)
         {
             _playerHealth.OnDamaged -= TriggerHitStop;
+            
         }
     }
 
@@ -48,4 +46,6 @@ public class PlayerAnimation : MonoBehaviour
         yield return new WaitForSeconds(_hitStopTime);
         _animator.speed = 1;
     }
+
+    
 }

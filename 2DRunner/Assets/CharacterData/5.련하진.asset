@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   CharacterID: 4
   CharacterName: "\uB828\uD558\uC9C4"
-  BaseHealth: 130
-  BonusMoveSpeed: 2
+  BaseHealth: 180
+  BonusMoveSpeed: 1
   CharacterSprite: {fileID: -5935362975713551743, guid: 4790c697eb31b8a4f9fd990c1080d27c, type: 3}
   CharacterAnimator: {fileID: 22100000, guid: 37b9e9a9f61e29e4c8e9eb8ea40c566b, type: 2}

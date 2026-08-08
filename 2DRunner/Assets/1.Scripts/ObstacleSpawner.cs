@@ -4,7 +4,7 @@ public class ObstacleSpawner : MonoBehaviour
 {   
     [Header("생성 설정")]
     [Tooltip("생성할 장애물의 프리팹")]
-    [SerializeField]private GameObject _obstaclePrefab;
+    [SerializeField]private ObstacleData[] _obstacleDatas;
     [Tooltip("장애물이 생성되는 최소 간격(초)")]
     [SerializeField]private float _minSpawnTime = 1.5f;
     [Tooltip("장애물이 생성되는 최대 간격(초)")]
@@ -38,7 +38,17 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void SpawnObstacle()
     {
-        GameObject newObstacle = Instantiate(_obstaclePrefab,transform.position, Quaternion.identity);
+        if (_obstacleDatas == null || _obstacleDatas.Length == 0)
+        {
+            Debug.LogWarning("장애물 프리팹이 등록되지않음");
+        }
+        int randomIndex = Random.Range(0, _obstacleDatas.Length);
+        ObstacleData selectedData = _obstacleDatas[randomIndex];
+
+        Vector3 spawnPosition = transform.position;
+        spawnPosition.y += selectedData.YOffset;
+        
+        GameObject newObstacle = Instantiate(selectedData.ObstaclePrefab,spawnPosition, Quaternion.identity);
         Destroy(newObstacle, 10f);
     }
 
